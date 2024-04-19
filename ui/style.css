@@ -1,0 +1,47 @@
+body {
+    padding: 0;
+}
+
+header {
+    background-color: #4e3732;
+    width: 100%;
+    position:absolute;
+    left:0;
+    top:0;
+    padding: 10px;
+    height: 45px;
+}
+
+.flex {
+    display: flexbox;
+    justify-content: center;
+    width: 65%;
+}
+
+.tab {
+    padding: 0.3rem, 1rem, 0.2rem, 1rem;
+    margin-top: 0.7rem;
+    margin-left: 0.3rem;
+    border-bottom: 0.3rem solid black;
+    border-radius: 0px, 0px, 50px, 50px;
+    display: inline-block;
+    transition: background-color 250ms, border-bottom 250ms, transform 0.5s;
+}
+
+.tab > h4 {
+    margin: 0;
+    padding: 0;
+    transition: transform 0.5s;
+}
+
+.tab:hover {
+    border-bottom: 0.4rem solid black;
+    transform: scaleX(1.05);
+}
+.tab:hover > h4 {
+    transform: scaleX(0.90);
+}
+
+.tab:active {
+    background-color: rgba(105, 105, 105, 0.301);
+}
