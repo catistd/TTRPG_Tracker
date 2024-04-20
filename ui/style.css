@@ -2,49 +2,62 @@ body {
     padding: 0;
 }
 
+main {
+    height: 92vh;
+    width: 100vw;
+    margin-top: 5vh;
+}
+
 header {
-    background-color: #a7a7a7;
+    background-color: #211a31;
     width: 100%;
     position:absolute;
     left:0;
     top:0;
-    padding: 1vh, 10px, 3px;
-    height: 5vh;
+    height: 5%;
+    padding: 0.5vh, 0;
+}
+
+footer {
+    background-color: #211a31;
+    width: 100%;
+    position:absolute;
+    left:0;
+    bottom:0;
+    height: 3%;
+    padding: 3px;
+}
+
+aside {
+    width: 20vw;
+    height: 92vh;
+    background-color: #211a31;
+    display: inline-block;
+}
+
+#page-iframe {
+    min-width: 80vw;
+    display: inline-block;
 }
 
 .flex {
-    display: flexbox;
-    justify-content: center;
-    width: 85%;
-    position:absolute;
-    left:0;
-    top:0;
+    display: flex;
 }
 
 .tab {
-    padding: 0.3rem, 1rem, 0.2rem, 1rem;
-    margin-top: 0.7rem;
-    margin-left: 0.3rem;
-    border-bottom: 0.3rem solid black;
-    border-radius: 0px, 0px, 50px, 50px;
+    background-color: #34294b;
+    transition: background-color 0.5s;
+    max-width: 10%;
+    height: 85%;
     display: inline-block;
-    transition: background-color 250ms, transform 0.5s;
-    font-size: 2vh;
-}
-
-.tab > h4 {
-    margin: 0;
-    padding: 0;
-    transition: transform 0.5s;
+    margin:0px;
+    margin-left: 0.3vw;
+    padding: 2px;
+    font-size: 1.5cqw;
+    color: rgb(104, 135, 138);
+    padding: 0px, 0.5vw;
 }
 
 .tab:hover {
-    transform: scaleX(1.05);
-}
-.tab:hover > h4 {
-    transform: scaleX(0.90);
-}
-
-.tab:active {
-    background-color: rgba(105, 105, 105, 0.301);
+    background-color: #3b3549;
 }
