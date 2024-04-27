@@ -5,7 +5,9 @@ body {
 main {
     height: 92vh;
     width: 100vw;
+    margin-left: -0.4vw;
     margin-top: 5vh;
+    padding: 0;
 }
 
 header {
@@ -29,10 +31,16 @@ footer {
 }
 
 aside {
-    width: 20vw;
+    width: 19.5vw;
     height: 92vh;
-    background-color: #211a31;
+    background-color: #382d53;
     display: inline-block;
+    border-left: 0.5vw solid #211a31;
+}
+
+#buffer {
+    width: 0.35vw;
+    background-color: #211a31;
 }
 
 #page-iframe {
